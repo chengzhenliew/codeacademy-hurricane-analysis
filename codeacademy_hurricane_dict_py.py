@@ -52,25 +52,11 @@ def make_dictionary(names, months, years, max_sustained_winds, areas_affected, d
 name_dict = make_dictionary(names, months, years, max_sustained_winds, areas_affected, damages,deaths)
 print('this is a dictionary sorted by name:')
 print(name_dict)
+
 # 3
 # Organizing by Year
 
 # create a new dictionary of hurricanes with year and key
-
-# def make_year_dict(dictionary):
-#   hurricane_dictionary = {}
-#   information = dictionary.values()
-#   for hurricane in dictionary:
-#     for current_cane in information:
-#       current_year = current_cane.get('Year')
-#       if current_year not in hurricane_dictionary:
-#         hurricane_dictionary[current_year] = current_cane
-#       else:
-#         hurricane_dictionary[current_year] += current_cane
-#   return hurricane_dictionary
-
-# your previous code
-
 def make_year_dict(dictionary):
     hurricane_dictionary = {}
     for current_cane in dictionary.values():
@@ -124,9 +110,6 @@ def most_freq_affected_area(dictionary):
   print('\nthe most affected area is ' + str(max_area) + ', with the frequency being ' + str(max_area_count))
 
 most_freq_affected_area(area_dict)
-
-
-
 
 
 # 6
